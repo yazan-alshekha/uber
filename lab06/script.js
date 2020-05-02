@@ -1,9 +1,18 @@
 'use strict'
 confirm('Hello our customer');
 getTime();
+var count= prompt('how many cars you want ?');
 
-function getName(){
-  var name = prompt('enter you name ');
+
+
+
+
+
+  function getName(){
+  var name = prompt('enter you name (you shouldn\'t leave it empty ) ');
+  while (name ==''){ 
+    var name = prompt('enter you name (you shouldn\'t leave it empty ) ');
+   }
   return name
 }
 
@@ -26,6 +35,10 @@ function getTime(){
   document.getElementById("thename").innerHTML = greeting + ' ' + getName();
   //document.write('<h3>'+greeting+'</h3>');
 }
+
+
+
+
 
 
 
